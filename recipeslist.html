@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Title -->
+    <title>Recipes-Justcook</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png">
+      <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro:400,700" rel="stylesheet"/>
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylea.css">
+    
+</head>
+<body>
+    <header id="recipes-header">
+        <div class="container">
+            <div id="logo">
+                <h1><a href="index.html#intro" class="scrollto"><img  src="img/logo-150x50.png"/></a></h1>
+            </div>
+            <nav id="nav-menu-container" style="transform: translate(-30px,-5px);">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="index.html#intro">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#search">Search</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </header><!-- #header -->
+    <!--starting head-->
+    
+    <section id="start">
+        <div id="divs" class="scrollmenu" >
+           <!-- data loading-->                                                                           
+        </div>            
+    </section>
+    <section id="list">
+        <div class="side-about">
+            <h2>About Us</h2>
+            <img src="img/logo-150x50.png"/>
+            <p>Justcook is a website designed by the Bunkguru for the bachelors which do not want to buy groceries and make something good from the things available in their home.
+                <br>by</p>
+            <img src="img/bunkguru.png" width="150px" height="50px"/>
+            <button type="button" onClick="printing()">Search</button>
+        </div>
+        <div class="list-head">
+            <h2 id="head"></h2>
+            <div id="list-content-divs" class="list-content">
+               
+            </div>
+        </div>            
+    </section>
+    <script src="js/categoryIndex.js"></script>
+    <script src="js/list.js"></script>
+    <script>
+        function printing(){
+            window.print();
+	    }
+
+    </script>
+</body>
+</html>

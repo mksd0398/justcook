@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title -->
+    <title>Just Cook</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png">
+      <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro:400,700" rel="stylesheet"/>
+
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylea.css">
+</head>
+<body onload="on()">
+    <div id="overlay">
+        <div class="overlay-content">
+            <span class="close" onclick="off()">&times;</span>
+            <div class="email-button">
+                <img src="img/logo-150x50.png"/>
+                <h2>Subscribe Now !!</h2>
+                <div id="sendmessage"></div>
+                <div id="errormessage"></div>
+                <form id = "queryForms" action="" method="post" role="form" class="subscribeForm">
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required/>
+                        <div class="validation"></div>
+                    </div>
+                    <div class="text-center"><button type="submit" title="Send Message">Subscribe</button></div>
+                </form>
+                <br>
+                <h3>Eat Sleep Party Repeat!!</h3>
+            </div>
+        </div><!--design popup-->
+    </div>
+    <!--==========================
+        Header
+    ============================-->
+    <header id="header">
+            <div id="logo" class="right">
+                <h1><a href="#intro" class="scrollto"><img  src="img/logo-150x50.png"/></a></h1>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="#intro">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#search">Search</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+    </header><!-- #header -->
+    <!--==========================
+        Intro Section
+    ============================-->
+    <section id="intro">
+        <div class="split left" >
+            <div class= "top">
+                <img src="img/justcook2kx2k1.png"/>
+                <h1>Recipes At<br>your Door Step!</h1>
+                <h5>By Chef Bunkguru</h5>
+            </div>
+            <div class="bottom">
+                <h2>First we eat, then we do everything else</h2>
+            </div>
+        </div>
+        <div class="split right">
+                <div id="divs" class="scrollmenu">
+                                                                                            
+                </div>
+            <div class="htu">
+                <div class="imageframe">
+                </div>
+                <div class="stepsframe">
+                    <ol id="list">
+                        <li class="active">
+                            <h2>01</h2><h5>Check the items available at your home.</h5>
+                        </li>
+                        <li class="active">
+                            <h2>02</h2><h5>Select the items available at your home.</h5>
+                        </li>
+                        <li class="active">
+                            <h2>03</h2><h5>Click the search and choose from the recipes.</h5>
+                        </li>              
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section><!-- #intro -->
+    <!-- about -->
+    <section id="about">
+            <div class="split left-content">
+                <div class="about-content">
+                    <h1>About Us</h1>
+                    <p>Justcook is a website designed by the Bunkguru for the bachelors which do not want to buy 
+                            groceries and make something good from the things available in their home.
+                    </p>
+                </div>
+            </div>
+            <div class="split right-content">
+                <img src="img/logo-600x200.png"/>
+                <br>
+                <h3>by</h3>
+                <br>
+                <img src="img/bunkguru.png"/>
+            </div>
+    </section><!-- #about -->
+
+    <!-- search -->
+    <section id="search">
+        <div class="section-header">
+          <h1>Search</h1>
+          <p>Select the items available at your home from the below list.</p>
+        </div>
+        <div class="search-list" style="padding-bottom:90px;"> 
+            <ul id="search-unordered-list" >               
+            </ul>
+            <div class="text-center buttons"><button type="button" onClick="search()">Search</button></div>
+        </div>
+    </section>
+        <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+        <div class="contacts">
+            <div class="contact-about">
+                <img src="img/logo-150x50.png"/>
+                <p><strong>"We create products for customers, not get<br>customers for products. Contact us for any query<br>and recipe suggestions."</strong>
+            </div>
+            <div class="col-lg-5 col-md-8">
+                <div class="form">
+                  <div id="sendmessage"></div>
+                  <div id="errormessage"></div>
+                  <form id = "queryForms" action="" method="post" role="form" class="contactForm">
+                    <div class="form-row">
+                      <div class="form-group col-lg-6">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                        <div class="validation"></div>
+                      </div>
+                      <div class="form-group col-lg-6">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                        <div class="validation"></div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                      <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                      <div class="validation"></div>
+                    </div>
+                    <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+                  </form>
+                </div>
+            </div> 
+        </div>
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.974090119687!2d77.617652214801!3d13.03732119081275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1712ad70b57b%3A0xbbe6247fcb705fce!2sHKBK+College+of+Engineering!5e0!3m2!1sen!2sin!4v1542911443465" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </section><!-- #contact -->      
+<!--==========================
+    Footer
+============================-->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-lg-left text-center">
+                    <div class="copyright">
+                        &copy; Copyright <strong>Justcook</strong>. All Rights Reserved
+                    </div>
+                    <div class="credits">
+                        Designed by <a href="#">Bunkguru</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+                        <a href="#intro" class="scrollto">Home</a>
+                        <a href="#about" class="scrollto">About</a>
+                        <a href="#about" class="scrollto">search</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer><!-- #footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/categoryIndex.js"></script>
+    <script src="js/itemsIndex.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/contactform.js"></script>
+    <script src="js/subscribe.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+/*******************************************************
+    recipeDetail
+*******************************************************/
+#recipes-header {
+    padding: 30px 0;
+    height: 92px;
+    width: 100%;
+    position: fixed;
+    background-color:white;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    transition: all 0.5s;
+    z-index: 997;
+  }
+  
+  #recipes-header #logo {
+    float: left;
+  }
+  
+  #recipes-header #logo img {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /**************************************
+        start-list
+  **************************************/
+  #start{
+    position: relative;
+    width: 100%;
+    height: 350px;
+  }
+  
+  .scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    margin-right:10px;
+    margin-left:10px;
+  }
+  /*************************************
+        list
+  *************************************/
+  #list{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    top: 0px;
+    height: 100%;
+  }
+   .side-about{
+    width: 20%;
+    position: absolute;
+    z-index: 1;
+    margin-right:40px;
+    top: 0px;
+    padding-top: 10px;
+    padding-right:20px;
+    padding-left:20px;
+    right:0;
+    text-align: center;
+    overflow-x: hidden;
+  }
+   .side-about h2{
+    font-weight: bold;
+    color:black;
+    font-size: 40px;
+    text-align:center;
+  }
+   .side-about img{
+    text-align: center;
+  }
+   .side-about p{
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+  }
+  #list .list-head{
+    width: 80%;
+    position: absolute;
+    z-index: 1;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    margin-right:10px;
+    margin-left:10px;
+    margin-bottom:10px;
+    top: 0px;
+    left:0;
+    overflow-x: hidden;
+  }
+  #list .list-head h2{
+    color:black;
+    font-weight: 600;
+  }
+  #list .list-content{
+    width:90%;
+    overflow-y: hidden;
+  }
+  #list .list-content .list-item{
+    width: 90%;
+    top: 0px;
+    height: 300px;
+    overflow:auto;
+    padding : 10px;
+    margin : 10px;
+    overflow-y: hidden;
+    border-radius: 5px;
+    border: transparent;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  }
+  #list .list-content .list-item .img{
+    height: 270px;
+    width: 270px;
+    float: left;
+  }
+  #list .list-content .list-item .item-content{
+    float: left;
+    height: 100%;
+    position:relative;
+    padding-left: 20px;
+  }
+  
+  .item-content p{
+    width: 600px;
+    font-weight: 400;
+  }
+  .item-content .down-content{
+    bottom:0px;
+    position: absolute;
+  }
+  .item-content .down-content a{
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .item-content .down-content a:hover{
+    text-decoration: underline;
+    color: #e42883;
+  }
+  
+  /***********************************************
+          Recipes detail
+  ***********************************************/
+  #recipes-detail-header{
+    padding : 20px 50px 20px 50px;
+    height: 90px;
+    position: fixed;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    right: 0;
+    background: white;
+    transition: all 0.5s;
+    z-index: 997;
+  }
+  
+  #recipes-detail-header #logo {
+    float: left;
+  }
+  
+  #recipes-detail-header #logo img {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #details {
+    position: relative;
+    top: 100px;
+    padding: 40px;
+    color: black;
+  }
+  
+  #details .head{
+     width: 100%;
+  }
+  #details .head h1{
+    font-weight: 600;
+  }
+  #details .img-ingredient{
+    position: relative;
+    margin-bottom: 30px; 
+  }
+  #details .img-ingredient .ingredient{
+    color: black;
+  }
+  #details .img-ingredient img{
+    width: 600px;
+    height: 600px;
+  }
+  
+  #details .img-ingredient .ingredient{
+    width: 40%;
+    float: right;  
+  }
+  #details .img-ingredient .ingredient h1{
+    font-size: 50px;
+    font-weight: 600;
+  }
+  #details .detail-about{
+    position: absolute;
+    width: 100%;
+  }
+  
+  #details .side-about{
+    right: 0;
+    width: 20%;
+    margin: 30px;
+  }
+  
+  #details .details{
+    left: 0;
+    width: 60%;
+    margin-top:30px;
+    padding-right:30px;
+  }
+  
+  #details .details h1{
+    font-size: 50px;
+    font-weight: 800;
+  }
+  
+  #details .details p{
+    font-size: 25px;
+  }

@@ -1,0 +1,602 @@
+body {
+    background: #fff;
+    color: #666666;
+    font-family: 'Advent Pro', sans-serif;
+    overflow-x: hidden;
+    margin: 0px;
+  }
+  
+  a {
+    color: black;
+    transition: 0.5s;
+  }
+  
+  a:hover, a:active, a:focus {
+    color: linear-gradient(45deg, #e42936,#e42883);
+    outline: none;
+    text-decoration: none;
+  }
+  
+  p {
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+/*--------------------------------------------------------------
+  # overlay
+--------------------------------------------------------------*/
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay .overlay-content{
+  position: absolute;
+  width: 400px;
+  height: 350px;
+  border-radius: 10px;
+  border: transparent;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+#overlay .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 40px;
+  padding-right:10px;
+  font-weight: bold;
+}
+
+#overlay .close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#overlay .email-button{
+  width: 350px;
+  height: 290px;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+#overlay button[type="submit"] {
+  background: white;
+  border:2px solid rgba(228,41,54,1);
+  border-radius: 20px;
+  padding: 8px 30px;
+  color: rgba(228,41,54,1);
+}
+
+#overlay button[type="submit"]:hover {
+  background: linear-gradient(45deg,rgba(228,41,54,1),rgba(228,40,131,1));
+  cursor: pointer;
+  color:white;
+}
+
+  /*--------------------------------------------------------------
+  # Navigation
+  --------------------------------------------------------------*/
+  .nav-menu, .nav-menu * {
+    margin-top: 5px;
+    margin-right: 10px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .nav-menu ul {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+  }
+  
+  .nav-menu li {
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .nav-menu > li {
+    float: left;
+  }
+ 
+  
+  .nav-menu ul ul {
+    top: 0;
+    left: 100%;
+  }
+  
+  .nav-menu ul li {
+    min-width: 180px;
+  }
+/* Nav Meu Container */
+  #nav-menu-container {
+    float: right;
+    top: 0;
+    margin: 0;
+    transform: translate(-30px,20px);
+  }
+  /* Nav Meu Styling */
+.nav-menu a {
+    padding: 0 8px 10px 8px;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    outline: none;
+  }
+  .nav-menu a:hover{
+    color: #e42936;
+  }
+
+   
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  #header {
+    height: 92px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+  }
+  
+  #header #logo {
+    float: right;
+    transform: translate(-30px,20px);
+  }
+  
+  #header #logo img {
+    padding: 0;
+    margin: 0;
+  }
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+#intro {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  box-shadow:  0 0 10px 0px rgba(0,0,0,0.15);
+  padding-bottom: 3px;
+}
+
+#intro .split {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+ .left {
+    left: 0;
+    background: linear-gradient(45deg, rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)), url("img/background.jpg") center top no-repeat;
+    background-size: cover;
+}
+.top {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.top h1{
+    color : white;
+    font-size:60px;
+}
+.top h5 {
+    color :white;
+}
+.top img{
+    width:200px; 
+    height:200px; 
+}
+
+.bottom {
+    position: absolute;
+    bottom: 5%;
+    transform: translate(28%, -10%);
+    text-align: center;
+}
+
+.bottom h2{
+    color:white;
+}
+.right {
+    right: 0;
+    overflow: hidden;
+}
+/* horizontal bar*/
+
+#divs.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+  transform:translate(0%,60%);
+  margin-right:10px;
+  margin-left:10px;
+}
+.sliding-menu-frame{
+  display: inline-block;
+  height:200px;
+  width:150px;
+  position:relative;
+  border-radius: 20px;
+}
+
+#divs.scrollmenu .sliding-menu-frame a {
+  display: inline-block;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 24px;
+  cursor:pointer;
+  text-align: center; 
+  border-radius: 20px;
+  margin:10px;
+  text-decoration: none;
+}
+
+ #divs.scrollmenu .sliding-menu-frame a:hover{
+  text-decoration: underline;
+  cursor:pointer;
+  color: #e42883;
+}
+
+#divs::-webkit-scrollbar {
+  height:0px;
+}
+
+#divs::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+#divs::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+#divs::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+.htu{
+  display:flex;
+  position: absolute;
+  height:350px;
+  width: 85%;
+  max-width: 85%;
+  margin-left:50px;
+  margin-right:50px;
+  bottom: 5%;
+  text-align: center;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.15);
+}
+.imageframe{
+  width: 100%;
+  height: 100%;
+  background-image: url('img/intro-steps.jpg');
+  background-size: cover;
+  box-shadow: 0 0 10px 3px rgba(0,0,0,0.07);
+}
+
+.stepsframe{
+  border-left: 6px solid #e42936;
+  border-right : 6px solid #e42883;
+  border-top : 6px solid #ff9100;
+  border-bottom: 6px solid #09ff00;
+}
+#list{
+  list-style: none;
+  display :block;
+  margin-block-start: 0;
+  margin-block-end:0;
+  margin-inline-start:0;
+  margin-inline-end:0;
+  padding-inline-start:0;
+}
+.active{
+  text-align: left;
+  padding: 10px;
+}
+
+.active h5{
+  font-size: 20px;
+}
+
+.active h2{
+  font-size: 40px;
+  padding-right: 10px;
+  font-weight: bolder;
+}
+.active h2:first-of-type {
+  float: right;
+}
+
+.active h2:last-of-type {
+  float: left;
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+#about {
+  overflow: hidden;
+  height: 100vh;
+  text-align: center;
+}
+#about .split {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#about .left-content{
+  left:0;
+  transform: translateY(18%);
+  text-align:center;
+}
+.about-content{
+  box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  width: 400px;
+  transform: translate(50%,20%);
+  padding: 10px;
+  border:1px whitesmoke solid transparent;
+}
+
+.about-content h1{
+  font-size:60px;
+  font-weight: bolder;
+  color: black;
+}
+
+.about-content p{
+  color: black;
+  font-size:30px;
+  font-weight: 500;
+}
+#about .right-content{
+  right: 0;
+  transform: translateY(18%);
+  text-align: center;  
+}
+/*--------------------------------------------------------------
+# search Section
+--------------------------------------------------------------*/
+#search {
+  padding-top: 90px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 90px;
+  overflow: hidden;
+  height: 100vd;
+  box-shadow:  0 0 10px 0px rgba(0,0,0,0.15);
+}
+#search .buttons button {
+  background: white;
+  border:2px solid rgba(228,41,54,1);
+  border-radius: 20px;
+  padding: 8px 30px;
+  font-size: 20px;
+  color: rgba(228,41,54,1);
+}
+
+#search .buttons button:hover {
+  background: linear-gradient(45deg,rgba(228,41,54,1),rgba(228,40,131,1));
+  cursor: pointer;
+  color:white;
+}
+.section-header h1{
+  font-size: 60px;
+  font-weight:bold;
+  color:black;
+}
+.section-header p{
+  font-size: 30px;
+  font-weight : bold;
+}
+.search-list ul{
+  list-style: none;
+  display: block;
+  padding-inline-start : 0px;
+}
+
+#search .collapsible {
+  background-color: white;
+  color: black;
+  margin: 5px;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: 0px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); 
+  text-align: left;
+  outline: none;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+#search .active,#search .collapsible:hover {
+  color: white;
+  background: linear-gradient(90deg,rgba(228,41,54,1),rgba(228,40,131,1));
+}
+
+#search .content {
+  margin-left: 30px;
+  display: none;
+  overflow: hidden;
+  margin-bottom: 5px;
+  background-color: #ffffff;
+}
+
+#search .checkboxs{
+  border: 1px transparent;
+  border-radius: 5px;
+  padding:10px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  float: left;
+}
+#search .checkboxs img{
+  height: 40px;
+  width: 40px;
+}
+#search .checkboxs label{
+  transform: translate(0px,-10px);
+}
+#search .checkboxs input{
+  transform: translate(0px,-10px);
+}
+#search .text-center{
+  text-align: center;
+}
+/* Contact Section
+--------------------------------*/
+#contact {
+  padding: 60px 0;
+  overflow: hidden;
+  position: relative;
+}
+#contact .contacts{
+  width:70%;
+  float:left;
+}
+#contact .contacts .contact-about{
+  width: 40%;
+  float:left;
+  padding-left:30px;
+}
+#contact .contacts .contact-about p {
+  font-size: 20px;
+  line-height: 24px;
+  color: black;
+}
+#contact .contacts .form{
+  width:80%;
+  float:left;
+  padding-right:30px;
+  padding-left:30px;
+  top:0;
+}
+#contact .contacts .form #sendmessage {
+  color: green;
+  border: 1px solid green;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .contacts .form #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .contacts .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+  display: block;
+}
+
+#contact .contacts .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#contact .contacts .form input, #contact .form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+#contact .contacts .form button[type="submit"] {
+  background: white;
+  border:2px solid rgba(228,41,54,1);
+  border-radius: 20px;
+  padding: 8px 30px;
+  color: rgba(228,41,54,1);
+}
+
+#contact .contacts .form button[type="submit"]:hover {
+  background: linear-gradient(45deg,rgba(228,41,54,1),rgba(228,40,131,1));
+  cursor: pointer;
+  color:white;
+}
+
+#contact .maps{
+  width: 30%;
+  float:right;
+  transform: translateX(-200px);
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #fff;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+#footer .credits {
+  font-size: 13px;
+  color: #888;
+}
+
+#footer .footer-links a {
+  color: #666;
+  padding-left: 15px;
+}
+
+#footer .footer-links a:first-child {
+  padding-left: 0;
+}
+
+#footer .footer-links a:hover {
+  color: linear-gradient(45deg,#e42883,#e42936);
+}
