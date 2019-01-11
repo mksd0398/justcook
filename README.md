@@ -1,0 +1,2 @@
+# justcook
+Just cook is a website where you can find variety of recipes. Just cook have its search technique that will allow you to find the recipes which you can make according to the items available in your home. Just follow the 3 easy steps: 1. Select the items which are available at your home from our wide range of categorized food items list  2. press search. 3. Select the recipes which you want to make and you will find the complete description.
